@@ -1,0 +1,12 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: angular-web-app-service-v2
+spec:
+  selector:
+    app: angular-web-app
+  ports:
+    - protocol: TCP
+      port: 81
+      targetPort: 81
+  type: NodePort
